@@ -1,0 +1,177 @@
+.position-con{
+    font-size:14px;
+}
+#myModal li.modal-member{
+    text-align:center;
+    padding:1rem;
+    margin:0;
+}
+
+.modal-content{
+    /*background:rgba(0,0,0,0);*/
+    border:none;
+
+}
+.modal-id{
+    padding:1rem;
+    float:right;
+}
+.member li a:hover{
+    color:#3EB1D9;
+}
+.member li a{
+    text-decoration: none;
+    color:#000;
+    font-size:1rem;
+}
+#myModal ul.member a{
+    border:none;
+}
+#myModal li.modal-code{
+    float:left;
+    width:10.5rem;
+    /*height:40px;*/
+    text-align:center;
+    padding:1rem;
+}
+.modal-active{
+    background:#EC6C2B;
+    border:.01rem solid #ddd;
+
+}
+.member{
+    list-style:none;
+    display:flex;
+
+}
+
+span.modal-id{
+    float:right;
+}
+a.modal-login{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+.modal-mail{
+    background:#EC6C2B;
+    padding:.5rem;
+    width:6rem;
+    margin-bottom:1.5rem;
+
+}
+.modal-mail>a{
+    color:#fff;
+    text-decoration: none;
+}
+.modal-mail>a:hover{
+    color:#3EB1D9;
+}
+
+.modal-form input{
+    height:3.6rem;
+}
+.modal-header{
+    margin-bottom: 1rem;
+}
+.cope{
+    display:none;
+}
+.modal-body{
+    padding:0;
+    margin-left:8rem;
+
+}
+.modal-form{
+    width:80%;
+}
+.modal-enter{
+    margin-left:4.6rem;
+}
+button .on{
+    background-color:#70CB10;
+}
+.checkbox{
+    color:#000;
+}
+.imgs{
+    padding-bottom:3rem; ;
+}
+#cope2 ul.ulimg{
+    display:flex;
+    list-style:none;
+}
+#cope2 ul.ulimg li{
+    margin:0;
+}
+#cope2 ul.ulimg img{
+    width:47%;
+
+}
+.imgcode{
+    text-align: center;
+}
+.imgcode>img{
+    width:32.21%;
+}
+.ulimg{
+    margin-top:2rem;
+    padding-bottom:2rem;
+    margin-left:17%;
+}
+.pone{
+    color:#3EB1D9;
+    display: inline-block;
+    font-size: 2rem;
+    margin-left:37%;
+    margin-bottom:1rem;
+    margin-top:-5rem;
+}
+.btn-success{
+    margin-right:1rem;
+    width:5rem;
+}
+.checkbox>a{
+    text-decoration:none;
+    margin-left:1rem;
+}
+.cope2{
+    padding-top:-1rem;
+    height:10rem;
+    color:#fff;
+
+}
+.cope1{
+    color:#fff;
+    height:10rem;
+}
+.form-control{
+    margin-bottom:2rem;
+}
+.input-imgs{
+    margin-right:1rem;
+}
+.form-inline{
+    margin-top:-1rem;
+}
+.modal-three{
+    margin:1rem 0;
+}
+@media screen and (max-width:992px){
+    #cope2{
+        display: none; }
+    .member{
+        display: none;
+    }
+    .btn-success{
+        width:17.2rem;
+    }
+    .modal-box{
+        display:flex;
+    }
+    .checkbox{
+        display: none;
+    }
+
+}

@@ -1,0 +1,121 @@
+ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+h1, h2,h3,h4,h5,h6{
+    margin:0;
+    padding: 0;
+}
+#position .position-con p {
+    color: #ED6825;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+#position .position-con{
+    min-height: 400px;
+}
+#position #zhi_zu .list-inline li a{
+    display: inline-block;
+    font-size: .1rem;
+    padding: 3px;
+    border: 1px solid #dddddd;
+    margin-bottom:5px;
+}
+#position #zhi_zu .list-inline li a:hover{
+    background:#F06D2B;
+    color: #f7f7f7;
+    border-color: #F06D2B;
+}
+#background_fixed {
+    background:  #f2f2f2 url("../images/background.jpg") 27% -37% no-repeat  fixed;
+
+}
+
+.main_container_1{
+    min-height: 174px;
+    background: #ffffff;
+    max-width:727px;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #D9D9D9;
+    position: relative;
+}
+.list_c_margin {
+    margin:5px;
+    cursor:pointer;
+}
+.list_c_margin li{
+    margin-right:20px;
+}
+.list_c_margin_top{
+    margin-top: 20px;
+}
+.dda,.list_c_margin li:hover{
+    background: #000000;
+    color:#ffffff;
+}
+.form-control-trash{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+.form_btn{
+    margin-top: 20px;
+    width:100px;
+}
+.form_btn:hover{
+    margin-top:15px;
+    margin-bottom:5px;
+    transition:all 0.2s;
+}
+.query-weixin {
+    margin-top: 10px;
+    text-align: center;
+}
+.in_family{
+    width:240px;
+    height:64px;
+    border:2px solid #d43f3a;
+    margin: 40px auto 10px;
+    position: relative;
+    cursor: pointer;
+}
+.in_family div.text-center{
+    line-height: 64px;
+    color:#D43F3A;
+}
+.in_family img {
+    position: absolute;
+    top: 15px;
+    left: 33px;
+}
+.arrow {
+    display: none;
+    height: 9px;
+    width: 14px;
+     background: url(../images/order-button-arrow.png);
+    position: absolute;
+    top: 45%;
+    right: 57%;
+    margin-right: -105px;
+}
+.main-content:after  {
+content: " ";
+height: 18px;
+width: 29px;
+background: url(../images/connector-bg.png);
+top: -17px;
+left: 64px;
+position: absolute;
+}
+
+
+

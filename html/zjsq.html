@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/2.css"/>
+    <link rel="stylesheet" href="../css/17.css">
+    <link rel="stylesheet" href="../css/11.css"/>
+    <style>
+        #brand-box ul{
+            list-style:none;
+            display:flex;
+            flex-wrap:wrap-reverse;
+        }
+        #brand-box img{
+            width:100%;
+        }
+        #brand-box li{
+            width:20%;
+            margin:2.5%;
+        }
+        #brand-box a{
+            color:#fff;
+            display:block;
+            width:100%;
+            text-decoration: none;
+        }
+        #headingOne1,#headingTwo1,#headingThr,#headingFor,#headingFir,#headingSix1,#headingSev,#headingEig,#headingNin,#headingTen,#headingEle,#headingTwe{
+            height:3rem;
+            background:#F77431;
+            border-radius:5px;
+            /*color:#F77431;*/
+        }
+        #accordion1>div{
+            margin-bottom:0.5rem;
+            border-radius:5px;
+            width:95%;
+        }
+        /*#accordion div{*/
+        /*background:#F77431;*/
+        /*}*/
+        #accordion1>div:hover{
+            margin-left:1.5rem;
+        }
+             /*       导航条      */
+        @media screen and (max-width: 1199px) and (min-width:768px){
+            #dht ul{
+                width:80%;
+            }
+        }
+        .background_fixed {
+            background:  #f2f2f2 url("../images/background.jpg") 27% -37% no-repeat  fixed;
+
+        }
+        .position-row,#iconlist {background-color:  rgba(248,251,252,0);}
+        .position-con {width: 100%; height: 100%;background-color:rgba(248,251,252,0);    padding: 10px;}
+        #shiqi li {line-height:30px;border-bottom:1px dotted #ccc;list-style: none;
+            height: 30px;background-color: rgba(248,251,252,0);}
+        #position .position-con{
+            min-height: 400px;
+        }
+        a{
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+<div id="cui_jian">
+    <div id="nav" class="container">
+        <div class="row text-center text-lowercase ">
+            <div class="col-md-3 col-xs-6 text-center">
+                <a href="#">
+                    <img src="../images/logo.png" class="img-responsive" alt=""/>
+                </a>
+            </div>
+            <div class="col-md-1 col-md-offset-1 hidden-sm hidden-xs"><a href="#"><b class="icon1"></b>联系我们</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon2"></b>投诉建议</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon3"></b>下载中心</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon4"></b>人才招聘</a></div>
+            <div class="col-md-3  col-xs-6 text-right" id="sc"><p><a href="#">加入收藏 设为首页</a></p>  <p>
+                服务热线：4001001717</p></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!--1、头部显示-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn_click" data-toggle="collapse" data-target="#myCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--2、折叠内容-->
+            <div id="myCollapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="fwdt.html" data-toggle="dropdown">
+                            服务大厅
+                            <span class="caret"></span>
+                        </a>
+                        <!--下拉菜单-->
+                        <ul class="dropdown-menu">
+                            <li><a href="fwdt.html">十七常识</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.2.html">新手入门</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.3.html">投诉建议</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.4.html">下载中心</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="zzcx.html">自助查询</a></li>
+                    <li><a href="cpfw.html">产品与服务</a></li>
+                    <li><a href="jrsq.html">加入十七</a></li>
+                    <li><a href="xwgg.html">新闻公告</a></li>
+                    <li><a href="zjsq.html">走进十七</a></li>
+                </ul>
+                <!--表单-->
+                <form class="navbar-form navbar-right" style="position:absolute;top:0px;right:40px;">
+                    <div class="form-group has-feedback">
+                        <input type="text"id="ddjing" class="form-control" placeholder="快递单号"/>
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--网页主体-->
+<section id="main" class="background_fixed" >
+    <div   class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="position-row">走进十七</h4>
+                <ol id="shiqi">
+                    <li class="active"><span></span><a href="#">十七简介</a></li>
+                    <li><span></span><a href="#">十七历程</a></li>
+                    <li><span></span><a href="#">十七文化</a></li>
+                    <li><span></span><a href="#">十七品牌</a></li>
+                    <li><span></span><a href="#">联系我们</a></li>
+                    <li data-toggle="modal" data-target="#myModal"><span></span><a href="#">企业邮箱登陆</a></li>
+                    <li><span></span><a href="#">十七快运系统登陆</a></li>
+                </ol>
+                <div class="row" id="iconlist">
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon1.jpg" alt="icon1">
+                        </a>
+                        <p>联系</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon2.jpg" alt="icon2">
+                        </a>
+                        <p>投诉</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon3.jpg" alt="icon3">
+                        </a>
+                        <p>下载</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon4.jpg" alt="icon4">
+                        </a>
+                        <p>招聘</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 position" id="position">
+                <!--<div class="row">-->
+                <!--十七简介-->
+                <div class="position-con">
+                    <h5 class="position-title">十七简介</h5>
+                    <div class="img-title">
+                        <p><img src="../images/aboutimg.jpg" alt="abouttime" class="img-responsive"/></p>
+                        <p>上海17素材科技有限公司经过多年的发展，17素材科技有限公司已成为一家专业的互联网应用技术及网络传播服务提供商，致力为用户提供成熟的互联网应用技术与专业的网络传播服务。</p>
+                        <p>上海17素材科技有限公司凭借着对互联网行业的独到见解和丰富经验，在项目策划、项目管理、设计制作、技术开发和网络传播等多方面寻求平衡；在项目过程中，17素材通过周密的策划、深入的调查、理性的分析、精妙的创意、专业的实施，并同客户的实际情况和具体需求进行良好结合，为不同类型的客户提供最佳的互联网应用定制解决方案，帮助客户在新的全球化互联网环境中保持优势。</p>
+                        <p>17素材秉承先进的互联网应用技术和领先的网络传播理念，建立了科学的管理机制和强有力的服务体系；专业资深的互联网应用技术服务团队将以最优化的资源配置与最佳的网络传播方式为源动力，为17素材庞大而优秀的客户群体打造网络新形象，正是17素材的独到之处。</p>
+                        <p>17素材 以网站建设、移动互联产品、整合营销服务为核心业务 专注于创意设计和传播应用 探索并实现商业价值最大化 为所有谋求长远发展的企业机构贡献全力 ;17素材注重专业探索，摒弃虚浮夸张 在更深远的认知中 将不断修正服务导向，完善创作品格 以探求精品塑造与理念升华 勇做推动行业发展的中坚力量;17素材拥有多年的行业服务经验 成功服务过数百家知名集团企业、品牌客户 凭借对设计的热爱执着，营销趋势的敏锐洞察和深刻理解 与众多客户在蓬勃的市场经济中互促共生;17素材珍视与客户的每次合作 坚持一切工作都以"创意、传播"这一极富生命力的情节展开 并始终信奉"全力以赴，互促共生"的公司价值观 总是付出更多参与其中。</p>
+                    </div>
+                </div>
+                <!--十七历程-->
+                <div class="position-con disnone">
+                    <h5 class="position-title">十七历程</h5>
+                    <div class="img-title">
+                    <div class="lichen">
+                        <img src="../images/aboutimg.jpg" alt="abouttime" class="img-responsive"/>
+                    </div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        2008
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    2008年5月12日14时28分04秒，四川汶川、北川暴发8级强震。瞬时间，大地颤抖，山河移位，牵动了亿万国人的心。申通快递在第一时间向汶川人民奉献爱心，捐款金额达600余万人民币。紧接着，申通快递与淘宝网联合吹响六一赈灾集结号，两家联合举办的六一爱心特别活动，爱心礼物直达灾区，让灾区幸存的小生命不再孤独，不在寂寞……
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2009
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    新《邮政法》的正式实施，为邮政行业的良性发展提供了有力的法律保障，也为行业内的快递企业自身规范提供了依据。申通快递作为起步较早，网络覆盖面较大的民营快递企业，终于由当初的“黑快递”企业，转变成中国邮政业的重要组成部分，这对于国内快递企业而言，有着开天辟地的意义。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        2010-2011
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    申通快递在全国布局已经形成，网点覆盖全国各大省市县级区域，江浙沪地区基本实现派送无盲区。公司营运产能不断增长，服务质量稳步提升，公司品牌和形象的统一建设深入推进，成为国内快递网络较完整、规模较庞大的民营快递体系之一。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        2012
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    随着申通网络的日益完善和公司的高速发展，人才需求问题日益突出。这一年，申通与清华大学合作开办申通高级人才管理培训班。放眼未来，强化企业管理人才的培训和储备工作。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        2013
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    2013年，申通快递成立了自己的新闻宣传中心，成为企业文化和对外宣传的重要平台。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        2014
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    2014年  7月，申通快递东北大区、西北大区完成授牌，这标志着申通快递片区管理由五大区转变为七大区，区域划分更加细化，管理更加深入一线；8月，申通快递与中铁合作试运行“沪深”快递专列，开创民营快递与铁路合作之先河；11月，双十一当日，申通快递全网订单量达到3050万件，再次创造了行业奇迹；12月，申通快递日本专线正式开通，申通快递国际网络覆盖亚洲其他国家的宏伟蓝图又迈出关键一步。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        2015
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                    2015年4月，申通快递东三省区域快件开始全面提速，随后全国各区域陆续跟进，伴随着快件的提速，消费者服务体验进一步完善；5月，申通商学院第一期管理培训班开班，这标志着申通快递搭建的完整内部人才培训计划正式开始实施；6月，申通快递与顺丰、中通、韵达、普洛斯联合发布公告，丰巢快递柜在全国各地遍地开花，有人的地方就有“丰巢”；12月，申通快递借壳上市，冲击“A股快递第一股”。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--十七文化-->
+                <div class="position-con disnone">
+                    <h5 class="position-title">十七文化</h5>
+                    <div class="img-title">
+                    <p>一个优秀的企业必须拥有优秀的文化，谁拥有文化优势，谁就拥有竞争优势。</p>
+                    　　<p>在我国物流企业虽然起步较晚，但已经到了提出建设物流文化的时候了，企业文化必将成为物流企业不可或缺的核心竞争力。那么，物流企业应该具备什么样的企业文化?社会责任、以人为本、改革创新是物流企业建设企业文化应该重视的三个方面。</p>
+                    　　<p>一是社会责任。提高企业的经营业绩，引导企业的经营方向，把企业经济利益与社会利益紧密结合起来，与上下游企业合作共赢，为社会就业与实现和谐社会作出贡献，这是企业义不容辞的社会责任。</p>
+                    　　<p>二是以人为本。企业是员工的集合，企业的行为是员工活动的集成，这一特点体现了企业必须人格化、人性化的本质。如何尊重员工、关心员工、鼓励员工、规范员工行为，发扬团队精神、进取精神，已经成为十分重要的企业文化。</p>
+                    　　<p>三是改革创新。中国企业成长于计划经济向市场经济过渡的转轨期，发展在全球经济一体化推进期与中国实现“新四化”的关键期，这一时期充满着环境变化和复杂性与竞争加剧的压力，企业在复杂多变的环境中必须建立一种自己的文化，以适应改革深化与不断创新的需要。要以改革创新精神迎接物流业面临的新挑战和新机遇。</p>
+                    　　<p>企业文化的功能</p>
+                    　　<p>导向功能：所谓导向功能就是通过它对企业的领导者和职工起引导作用。企业文化的导向功 能主要体现在以下二个方面：</p>
+                    　　<p>1.经营哲学和价值观念的指导:经营哲学决定了企业经营的思维方式和处理问题的法则，这些方式和法则指导经营者进行正确的决策，指导员工采用科学的方法从事生产经营活动。企业共同的价值观念规定了企业的价值取向，使员工对事物的评判形成共识，有着共同的价值目标，企业的领导和员工为着他们所认定的价值目标去行动。</p>
+                    　　<p>2.企业目标的指引:企业目标代表着企业发展的方向，没有正确的目标就等于迷失了方向。完美的企业文化会从实际出发，以科学的态度去制立企业的发展目标，这种目标一定具有可行性和科学性。企业员工就是在这一目标的指导下从事生产经营活动。</p>
+                    　　<p>约束功能：企业文化的约束功能主要是通过完善管理制度和道德规范来实现。</p>
+                    　　<p>1.有效规章制度的约束:企业制度是企业文化的内容之一。企业制度是企业内部的法规，企业的领导者和企业职工必须遵守和执行，从而形成约束力。</p>
+                    　　<p>2.道德规范的约束:道德规范是从伦理关系的角度来约束企业领导者和职工的行为。如果人们违背了道德规范的要求，就会受到舆论的遣责，心理上会感到内疚。同仁堂药店“济世养生、精益求精、童叟无欺、一视同仁”的道德规范约束着全体员工必须严格按工艺规程操作，严格质量管理，严格执行纪律。</p>
+                    　　<p>凝聚功能：企业文化以人为本，尊重人的感情，从而在企业中造成了一种团结友爱、相互信任的和睦气氛，强化了团体意识，使企业职工之间形成强大的凝聚力和向心力。共同的价值观念形成了共同的目标和理想，职工把企业看成是一个命运共同体，把本职工作看成是实现共同目标的重要组成部分，整个企业步调一致，形成统一的整体。这时，“厂兴我荣，厂衰我耻”成为职工发自内心的真挚感情，“爱厂如家”就会变成他们的实际行动。</p>
+                    　　<p>激励功能：共同的价值观念使每个职工都感到自己存在和行为的价值，自我价值的实现是人的最高精神需求的一种满足，这种满足必将形成强大的激励。在以人为本的企业文化氛围中，领导与职工、职工与职工之间互相关心，互相支持。特别是领导对职工的关心，职工会感到受人尊重，自然会振奋精神，努力工作。另外，企业精神和企业形象对企业职工有着极大的鼓舞作用，特别是企业文化建设取得成功，在社会上产生影响时，企业职工会产生强烈的荣誉感和自豪感，他们会加倍努力，用自己的实际行动去维护企业的荣誉和形象。</p>
+                    　　<p>调适功能：调适就是调整和适应。企业各部门之间、职工之间，由于各种原因难免会产生一些矛盾，解决这些矛盾需要各自进行自我调节;企业与环境、与顾客、与企业、与国家、与社会之间都会存在不协调、不适应之处，这也需要进行调整和适应。企业哲学和企业道德规范使经营者和普通员工能科学地处理这些矛盾，自觉地约束自己。完美的企业形象就是进行这些调节的结果。调适功能实际也是企业能动作用的一种表现。</p>
+                    　　<p>辐射功能： 文化力不止在企业起作用，它也能通过各种渠道对社会产生影响。文化力辐射的渠道很多，主要包括传播媒体，公共关系活动等。</p>
+                    </div>
+                </div>
+                <!--十七品牌-->
+                <div class="position-con disnone" id="brand-box">
+                    <h2>合作品牌</h2>
+                    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne1">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                    叉车品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1">
+                                <ul class="panel-body">
+                                    <li><img src="../images/20126141090696.jpg"/></li>
+                                    <li><img src="../images/20126147352405.jpg"/></li>
+                                    <li><img src="../images/20126147402627.jpg"/></li>
+                                    <li><img src="../images/20126147436947.jpg"/></li>
+                                    <li><img src="../images/20126147440383.jpg"/></li>
+                                    <li><img src="../images/20126147457916.jpg"/></li>
+                                    <li><img src="../images/20126149362777.jpg"/></li>
+                                    <li><img src="../images/20126149539742.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo1">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="flase" aria-controls="collapseTwo1">
+                                    托盘与单元化品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo1">
+                                <ul class="panel-body">
+                                    <li><img src="../images/20126149553710.jpg"/></li>
+                                    <li><img src="../images/20126149574472.jpg"/></li>
+                                    <li><img src="../images/20127312192268.jpg"/></li>
+                                    <li><img src="../images/2014112710332366.jpg"/></li>
+                                    <li><img src="../images/20151131119949.jpg"/></li>
+                                    <li><img src="../images/20151131128253.jpg"/></li>
+                                    <li><img src="../images/20155693322772.jpg"/></li>
+                                    <li><img src="../images/2014101116524684.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThr">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseThr" aria-expanded="flase" aria-controls="collapseThr">
+                                    货架品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseThr" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThr">
+                                <ul class="panel-body">
+                                    <li><img src="../images/20168178438536.jpg"/></li>
+                                    <li><img src="../images/20168179013886.jpg"/></li>
+                                    <li><img src="../images/20168179235133.jpg"/></li>
+                                    <li><img src="../images/201212313852358.jpg"/></li>
+                                    <li><img src="../images/201261216177360.jpg"/></li>
+                                    <li><img src="../images/201261216576528.jpg"/></li>
+                                    <li><img src="../images/201261217050944.jpg"/></li>
+                                    <li><img src="../images/201261310104126.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFor">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFor" aria-expanded="flase" aria-controls="collapseFor">
+                                    物流系统集成品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
+                                <ul class="panel-body">
+                                    <li><img src="../images/201261385658517.jpg"/></li>
+                                    <li><img src="../images/201261391451349.jpg"/></li>
+                                    <li><img src="../images/201261391537601.jpg"/></li>
+                                    <li><img src="../images/201261392238395.jpg"/></li>
+                                    <li><img src="../images/201261410157994.jpg"/></li>
+                                    <li><img src="../images/201261410173136.jpg"/></li>
+                                    <li><img src="../images/201261410240404.jpg"/></li>
+                                    <li><img src="../images/201261410257565.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFir">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFir" aria-expanded="flase" aria-controls="collapseFir">
+                                    物流软件品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseFir" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFir">
+                                <ul class="panel-body">
+                                    <li><img src="../images/201261410531107.jpg"/></li>
+                                    <li><img src="../images/201261410558513.jpg"/></li>
+                                    <li><img src="../images/201261410825550.jpg"/></li>
+                                    <li><img src="../images/201261473250470.jpg"/></li>
+                                    <li><img src="../images/201261473329405.jpg"/></li>
+                                    <li><img src="../images/201261473555220.jpg"/></li>
+                                    <li><img src="../images/201261473628310.jpg"/></li>
+                                    <li><img src="../images/201261473659576.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix1">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix1" aria-expanded="flase" aria-controls="collapseSix1">
+                                    输送分拣品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseSix1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix1">
+                                <ul class="panel-body">
+                                    <li><img src="../images/201261473726991.jpg"/></li>
+                                    <li><img src="../images/201261473925365.jpg"/></li>
+                                    <li><img src="../images/201261474030479.jpg"/></li>
+                                    <li><img src="../images/201261474059614.jpg"/></li>
+                                    <li><img src="../images/201261474159131.jpg"/></li>
+                                    <li><img src="../images/201261474233893.jpg"/></li>
+                                    <li><img src="../images/201261474542354.jpg"/></li>
+                                    <li><img src="../images/201261491511108.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSev">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseSev" aria-expanded="flase" aria-controls="collapseSev">
+                                    自动识别品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseSev" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSev">
+                                <ul class="panel-body">
+                                    <li><img src="../images/201261493448197.jpg"/></li>
+                                    <li><img src="../images/201261493523520.jpg"/></li>
+                                    <li><img src="../images/201261493658915.jpg"/></li>
+                                    <li><img src="../images/201261495631567.jpg"/></li>
+                                    <li><img src="../images/201273113633975.jpg"/></li>
+                                    <li><img src="../images/201273115518182.jpg"/></li>
+                                    <li><img src="../images/201411181685457.jpg"/></li>
+                                    <li><img src="../images/201411271064469.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingEig">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseEig" aria-expanded="flase" aria-controls="collapseEig">
+                                    升降台品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseEig" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEig">
+                                <ul class="panel-body">
+                                    <li><img src="../images/2012612172731193.jpg"/></li>
+                                    <li><img src="../images/2012612172810944.jpg"/></li>
+                                    <li><img src="../images/2012612172857201.jpg"/></li>
+                                    <li><img src="../images/2012612172951834.jpg"/></li>
+                                    <li><img src="../images/2012614101016212.jpg"/></li>
+                                    <li><img src="../images/2012614101540156.jpg"/></li>
+                                    <li><img src="../images/2012614102053433.jpg"/></li>
+                                    <li><img src="../images/2012614102127125.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNin">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseNin" aria-expanded="flase" aria-controls="collapseNin">
+                                    工业门品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseNin" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNin">
+                                <ul class="panel-body">
+                                    <li><img src="../images/2012614102223884.jpg"/></li>
+                                    <li><img src="../images/2012614102257968.jpg"/></li>
+                                    <li><img src="../images/2012614102327837.jpg"/></li>
+                                    <li><img src="../images/2012614102444638.jpg"/></li>
+                                    <li><img src="../images/2012614102515623.jpg"/></li>
+                                    <li><img src="../images/2012614102552621.jpg"/></li>
+                                    <li><img src="../images/2012614102632424.jpg"/></li>
+                                    <li><img src="../images/2012614102720778.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTen">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTen" aria-expanded="flase" aria-controls="collapseTen">
+                                    周边设备品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                                <ul class="panel-body">
+                                    <li><img src="../images/201511311027108.jpg"/></li>
+                                    <li><img src="../images/201511311351671.jpg"/></li>
+                                    <li><img src="../images/201511311424846.jpg"/></li>
+                                    <li><img src="../images/201586105032539.jpg"/></li>
+                                    <li><img src="../images/201681783626609.jpg"/></li>
+                                    <li><img src="../images/201681783720747.jpg"/></li>
+                                    <li><img src="../images/201681783916114.jpg"/></li>
+                                    <li><img src="../images/201681784128383.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingEle">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseEle" aria-expanded="flase" aria-controls="collapseEle">
+                                    机器人、AGV品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseEle" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEle">
+                                <ul class="panel-body">
+                                    <li><img src="../images/201681784615327.jpg"/></li>
+                                    <li><img src="../images/201681785129973.jpg"/></li>
+                                    <li><img src="../images/20141118155651235.png"/></li>
+                                    <li><img src="../images/2012112816020541.jpg"/></li>
+                                    <li><img src="../images/2012123143931483.jpg"/></li>
+                                    <li><img src="../images/2012612162258987.jpg"/></li>
+                                    <li><img src="../images/20141118154537342.jpg"/></li>
+                                    <li><img src="../images/2012612165418211.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwe">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwe" aria-expanded="flase" aria-controls="collapseTwe">
+                                    智能快递品牌
+                                </a></h4>
+                            </div>
+                            <div id="collapseTwe" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwe">
+                                <ul class="panel-body">
+                                    <li><img src="../images/2012612165452796.jpg"/></li>
+                                    <li><img src="../images/2012612165820859.jpg"/></li>
+                                    <li><img src="../images/2012612171712558.jpg"/></li>
+                                    <li><img src="../images/2012612171741297.jpg"/></li>
+                                    <li><img src="../images/2012612171819694.jpg"/></li>
+                                    <li><img src="../images/2012612172114472.jpg"/></li>
+                                    <li><img src="../images/2012612172330397.jpg"/></li>
+                                    <li><img src="../images/2012612172440117.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--联系我们-->
+                <div class="position-con disnone">
+                    <h5 class="position-title">联系我们</h5>
+                    <div class="img-title">
+                        <p>咨询热线：021—39927055、4001001717</p>
+                        <p>总部地址：上海市嘉定区马陆浏翔公路2158号</p>
+                        <p>官方网站：www.56ky.cn</p>
+                    </div>
+                </div>
+                <!--企业邮箱登陆-->
+                <div class="position-con disnone">
+                    <!--<h5 class="position-title">企业邮箱登陆</h5>-->
+                    <div class="modal fade" id="myModal"  role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span>&times;</span>
+                                    </button>
+                                </div>
+                                <!-----------------header-stop------------------->
+                                <!-----------------modal-enter------------------------------>
+                                <div class="modal-enter">
+                                    <ul class="member">
+                                        <li class="modal-member">
+                                            <a href="#cope2">手机登陆</a>
+                                        </li>
+                                        <li class="modal-code  modal-active">
+                                            <a href="#cope1">会员登陆</a>
+                                        </li>
+                                    </ul>
+                                    <!--<span class="modal-id">还没有账号</span>-->
+                                    <!--<a href="#" class="modal-login">立即注册</a>-->
+                                    <div class="clear"></div>
+                                </div>
+                                <!----------------modal-enter-stop------------------>
+
+                                <!------------body------------------->
+                                <div>
+                                    <div class="modal-body" id="cope1">
+
+                                        <div class="modal-mail">
+                                            <a>邮箱登陆</a>
+                                        </div>
+                                        <form class="modal-form">
+                                            <div class="form-group">
+                                                <input type="email" placeholder="邮箱" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" placeholder="密码" class="form-control">
+                                            </div>
+                                        </form>
+                                        <div class="form-inline">
+                                            <button class="btn btn-success">登录</button>
+                                            <div class="modal-box">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"  class="checkbox">保持登录
+                                                    </label>
+                                                </div>
+                                            <span class="checkbox">
+                                                <a href="#">忘记密码？</a>
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <p class="modal-three">用第三方账号直接登录</p>
+                                        <div class="imgs">
+                                            <input type="image" src="../images/7.png" class="input-imgs">
+                                            <input type="image" src="../images/8.png">
+
+                                        </div>
+
+                                    </div>
+                                    <!--------body-stop------------->
+                                    <!--------------二维码登录框------------------------->
+                                    <div class="cope" id="cope2">
+
+                                        <span class="pone">手机扫码登录</span>
+
+                                        <div class="imgcode">
+                                            <img src="../images/10.png">
+                                        </div>
+                                        <ul class="ulimg">
+                                            <li>
+                                                <img src="../images/t1.png">
+                                            </li>
+                                            <li>
+                                                <img src="../images/t2.png">
+                                            </li>
+                                            <li>
+                                                <img src="../images/t3.png">
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!--十七快运系统登陆-->
+                <div class="position-con disnone"></div>
+
+            </div>
+            <!--</div>-->
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row" id="row1" style="height: 205px;">
+            <div class="col-lg-1 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>服务大厅</li>
+                    <li>十七常识</li>
+                    <li>新手入门</li>
+                    <li>投诉中心</li>
+                    <li>下载中心</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>自助查询</li>
+                    <li>运单查询</li>
+                    <li>网点查询</li>
+                    <li>货物追踪</li>
+                    <li>订单查询</li>
+                </ul>
+            </div>
+            <div class="col-lg-1">
+                <ul>
+                    <li>产品与服务</li>
+                    <li>快运产品</li>
+                    <li>定制产品</li>
+                    <li>增值服务</li>
+                    <li>整车转运</li>
+                    <li>仓储物流</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>加入十七</li>
+                    <li>加盟指南</li>
+                    <li>在线加盟</li>
+                    <li>人才服务</li>
+                    <li>人才招聘</li>
+                    <li>在线招聘</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>新闻公告</li>
+                    <li>十七新闻</li>
+                    <li>十七公告</li>
+                    <li>行业动态</li>
+                    <li>企业视屏</li>
+                    <li>企业微博</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>走进十七</li>
+                    <li>十七简介</li>
+                    <li>十七历程</li>
+                    <li>十七文化</li>
+                    <li>十七品牌</li>
+                    <li>联系我们</li>
+                    <li>企业邮箱登陆</li>
+                    <li>十七快运系统登陆</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 hidden-md hidden-sm hidden-xs" id="finally">
+                <p class="first">联系我们</p>
+                <p>咨询热线:021—39927055、4001001717</p>
+                <p>总部地址:上海市嘉定区马陆浏翔公路2158号</p>
+                <p>官方网站:www.56ky.cn</p>
+                <img src="../images/weixin.jpg">
+                <div id="font">公司微信公众号平台，最新资讯，一扫了之！敬请关注!</div>
+            </div>
+        </div>
+        <div class="row" id="row2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background:#F06D2B;color:#fff; text-align: center;line-height: 40px;">Copyright &copy; 2015 Wliu Co.Ltd.沪ICP备00000000号 上海市浦东新区八嘎路2222号 技术支持：17素材
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootlint.js"></script>
+<script src="../js/fenye1.js"></script>
+<script>
+    $('#shiqi').on('click','li',function(){
+        var i = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#position').find('.position-con').eq(i).show().siblings().hide();
+
+
+    })
+//    林佳伟模态框
+    $('#shiqi>li').on('mouseleave',function(){
+        $(this).siblings().children('a').css('text-decoration','none');
+    })
+//    $('#shiqi').on('click','li',function(){
+//        var i = $(this).index();
+//        $(this).addClass('active').siblings().removeClass('active');
+//        $('#position').find('.position-con').eq(i).show().siblings().hide();
+//    })
+    $('.member li a').click(function(e){
+        e.preventDefault();
+        $(this).parent().addClass("modal-active").siblings().removeClass("modal-active");
+        var id=$(this).attr('href');
+        console.log(id);
+        $(id).removeClass('cope').siblings().addClass('cope');
+
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/11.css"/>
+    <link rel="stylesheet" href="../css/22.css"/>
+    <!--动画-->
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <!--自助查询-->
+    <link rel="stylesheet" href="../css/CUIJIAN_zhizhu_CHAXUN.css"/>
+    <!--中间的样式-->
+    <style>
+        @media screen and (max-width:767px){html{font-size: 6px;}}
+        @media screen and (min-width:768px) and (max-width:991px){html{font-size: 8px;}}
+        @media screen and (min-width:991px){html{font-size: 12px;}}
+        .position-row,.position-title { border-bottom:1px solid #cccccc;line-height: 32px;  }
+        .position-row {margin-bottom: 0;}
+        #shiqi{ padding: 0px !important;}
+        #shiqi li {line-height:30px;border-bottom:1px dotted #ccc;list-style: none;
+            height: 30px;background-color: rgba(248,251,252,0);}
+        #shiqi li span {display: inline-block;background-color:#ccc;
+            width: 5px;  height: 5px;border-radius: 50%;}
+        #shiqi li a {color:#333;margin-left:0.4em;}
+        #shiqi li.active, #shiqi li.active span{background-color: #EC6C2B;}
+        #shiqi li.active a {color:#fff;}
+        .position-row,#iconlist {background-color:  rgba(248,251,252,0);}
+        .position-con {width: 100%; height: 100%;background-color:rgba(248,251,252,0);    padding: 10px;}
+        .img-title{padding-left:1rem;padding-right: 1rem;}
+        .img-title img {width:100%;}
+        .disnone{display: none;}
+        #image{
+            display:block;
+            margin:0 auto;
+            width:616px;
+            height:546px;
+        }
+        @media screen and (max-width:1200px){
+            #image{
+                width:100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="cui_jian">
+    <div id="nav" class="container">
+        <div class="row text-center text-lowercase ">
+            <div class="col-md-3 col-xs-6 text-center">
+                <a href="#">
+                    <img src="../images/logo.png" class="img-responsive animated flipInX "alt=""/>
+                </a>
+            </div>
+            <div class="col-md-1 col-md-offset-1 hidden-sm hidden-xs animated bounceIn "><a href="#"><b class="icon1"></b>联系我们</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon2"></b>投诉建议</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon3"></b>下载中心</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon4"></b>人才招聘</a></div>
+            <div class="col-md-3  col-xs-6 text-right animated bounce" id="sc"><p><a href="#">加入收藏 设为首页</a></p>  <p>
+                服务热线：4001001717</p></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!--1、头部显示-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn_click" data-toggle="collapse" data-target="#myCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--2、折叠内容-->
+            <div id="myCollapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="fwdt.html" data-toggle="dropdown">
+                            服务大厅
+                            <span class="caret"></span>
+                        </a>
+                        <!--下拉菜单-->
+                        <ul class="dropdown-menu">
+                            <li><a href="fwdt.html">十七常识</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.2.html">新手入门</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.3.html">投诉建议</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.4.html">下载中心</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="active"><a href="zzcx.html" >自助查询</a></li>
+                    <li><a href="cpfw.html">产品与服务</a></li>
+                    <li><a href="jrsq.html">加入十七</a></li>
+                    <li><a href="xwgg.html">新闻公告</a></li>
+                    <li><a href="zjsq.html">走进十七</a></li>
+                </ul>
+                <!--表单-->
+                <form class="navbar-form navbar-right" style="position:absolute;top:0px;right:40px;">
+                    <div class="form-group has-feedback">
+                        <input type="text" id ="ddjing" class="form-control" placeholder="快递单号"/>
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--网页主体-->
+<section id="background_fixed">
+    <!--自助查询-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 animated rotateInDownLeft ">
+                <h4 class="position-row">自助查询</h4>
+                <ol id="shiqi">
+                    <li class="active"><span></span><a href="#">运单查询</a></li>
+                    <li><span></span><a href="#">网点查询</a></li>
+                    <li><span></span><a href="#">货物追踪</a></li>
+                    <li><span></span><a href="#">订单查询</a></li>
+                </ol>
+                <div class="row" id="iconlist">
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon1.png" alt="icon1">
+                        </a>
+                        <p>联系</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon2.png" alt="icon2">
+                        </a>
+                        <p>投诉</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon3.png" alt="icon3">
+                        </a>
+                        <p>下载</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon4.png" alt="icon4">
+                        </a>
+                        <p>招聘</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 position animated rotateInDownRight" id="position">
+                <!--运单查询-->
+                <div  id ="zhi_zu"class="position-con">
+                    <h5 class="position-title">运单查询</h5>
+                   <p><b>菏泽市18个网点15个门店</b></p>
+                    <ul class="list-inline">
+                        <li ><a href="#">兰山区</a></li>
+                        <li ><a href="#">罗庄区</a></li>
+                        <li ><a href="#">河东区</a></li>
+                        <li ><a href="#">盐埕区</a></li>
+                        <li ><a href="#">仓山区</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                        <li ><a href="#">应纳先</a></li>
+                    </ul>
+                </div>
+                <!-- 网点查询-->
+                <div class="position-con disnone">
+                    <h5 class="position-title">网点查询</h5>
+                        <div>
+                            <img id="image" class="animated bounceIn" src="../images/network.png" alt="" />
+                        </div>
+                </div>
+                <!--货物追踪-->
+                <div class="position-con disnone">
+                    <h5 class="position-title">货物追踪</h5>
+                    <div    class="container main_container_1 ">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                    <ul  id ="sj_dH" class="list-inline list_c_margin">
+                                        <li class="dda">按照单号</li>
+                                        <li>按照手机</li>
+                                    </ul>
+                                    <ul>
+                                        <li  >
+                                            <div class="has-feedback list_c_margin_top">
+                                                <form >
+                                                <input type="text" class="form-control" placeholder="最多可同时查询20条运单号，请以逗号、空格或回车键隔开。">
+                                                    <span class="glyphicon glyphicon-trash form-control-trash"></span>
+                                                </form>
+                                                <button type="submit" class=" btn btn-danger form_btn"> 查询</button>
+                                            </div>
+                                        </li>
+                                        <li class="disnone" >
+                                            <div class="has-feedback
+list_c_margin_top">
+                                                <form class="form-horizontal" >
+                                                    <div class="form-group">
+                                                        <label  form="inEmail3" class=" col-sm-2  control-label">
+                                                            <font color="red">
+                                                                *
+                                                            </font> 手机号
+                                                        </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="inEmail3" placeholder="请输入运单号上的手机号码"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label  form="inEmal3" class=" col-sm-2  control-label">
+                                                            寄时间
+                                                        </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="date" class="form-control" id="inEmal3" value ="请输入运单号上的手机号码"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label  form="inEmai3" class=" col-sm-2  control-label">
+                                                            <font color="red">
+                                                                *
+                                                            </font>验证码
+                                                        </label>
+                                                        <div class="col-sm-5">
+                                                            <input type="text  " class="form-control" id="inEmai3" value ="请输验证码"/>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                            <button type="submit" class="btn ">获取验证码</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-2  col-xs-5 col-sm-offset-2"></div>
+                                                        <button class=" btn  btn-danger form_btn" type="submit">
+                                                        查询
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                            </div>
+                            <div class="col-xs-3 ">
+                                <div class="query-weixin">
+                                    <img   class="img-responsive animated bounceIn" src="../images/code.png">
+                                    <p>
+                                        关注微信公众号<br>随时随地查运单</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container main_container_1 has-feedback disnone">
+                        <div class="main-content-row content-page main-content">
+                            <h3>查询须知</h3>
+                            <p>1、为了确保您的信息安全，我们目前仅提供运单上寄方或收方留有的手机号码的运单号查询</p>
+                            <p>2、目前仅提供7天内查询，一天内可查询3次</p>
+                            <p>3、获取的验证码10分钟内有效</p>
+                            <p>4、打*号为必填项</p>
+                        </div>
+                    </div>
+                    <div class="in_family hidden-xs animated rotateIn">
+                        <img src="../images/order-button-icon.gif" class="img-responsive " alt="">
+                        <div class="text-center">
+                            免费预约上门取件
+                        </div>
+                        <div class="arrow" ></div>
+                    </div>
+                </div>
+                <!--订单查询-->
+                <div class="position-con disnone">
+                    <h5 class="position-title">货物追踪</h5>
+                    <div class="container main_container_1 ">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <ul class="list-inline list_c_margin">
+                                    <li>输入订单号</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="has-feedback list_c_margin_top">
+                                            <form>
+                                                <input type="text" class="form-control" placeholder="请输入您的订单号码">
+                                                <span class="glyphicon glyphicon-trash form-control-trash"></span>
+                                            </form>
+                                            <button type="submit" class=" btn btn-danger form_btn"> 查询</button>
+                                        </div>
+                                    </li>
+                                    <li class="disnone">
+                                        <div class="has-feedback
+list_c_margin_top">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label form="inEmail3" class=" col-sm-2  control-label">
+                                                        <font color="red">
+                                                            *
+                                                        </font> 手机号
+                                                    </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="inEmail3" placeholder="请输入运单号上的手机号码">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label form="inEmal3" class=" col-sm-2  control-label">
+                                                        寄时间
+                                                    </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="date" class="form-control" id="inEmal3" value="请输入运单号上的手机号码">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label form="inEmai3" class=" col-sm-2  control-label">
+                                                        <font color="red">
+                                                            *
+                                                        </font>验证码
+                                                    </label>
+                                                    <div class="col-sm-5">
+                                                        <input type="text  " class="form-control" id="inEmai3" value="请输验证码">
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <button type="submit" class="btn ">获取验证码</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-2  col-xs-5 col-sm-offset-2"></div>
+                                                    <button class=" btn  btn-danger form_btn" type="submit">
+                                                        查询
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="col-xs-3 ">
+                                <div class="query-weixin">
+                                    <img class="img-responsive animated bounceIn" src="../images/code.png">
+                                    <p>
+                                        关注微信公众号<br>随时随地查运单</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="in_family hidden-xs animated rotateIn">
+                        <img src="../images/order-button-icon.gif" class="img-responsive " alt="">
+                        <div class="text-center">
+                            免费预约上门取件
+                        </div>
+                        <div class="arrow" ></div>
+                    </div>
+                </div>
+            </div>
+            <!--</div>-->
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row" id="row1" style="height: 205px;">
+            <div class="col-lg-1 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>服务大厅</li>
+                    <li>十七常识</li>
+                    <li>新手入门</li>
+                    <li>投诉中心</li>
+                    <li>下载中心</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>自助查询</li>
+                    <li>运单查询</li>
+                    <li>网点查询</li>
+                    <li>货物追踪</li>
+                    <li>订单查询</li>
+                </ul>
+            </div>
+            <div class="col-lg-1">
+                <ul>
+                    <li>产品与服务</li>
+                    <li>快运产品</li>
+                    <li>定制产品</li>
+                    <li>增值服务</li>
+                    <li>整车转运</li>
+                    <li>仓储物流</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>加入十七</li>
+                    <li>加盟指南</li>
+                    <li>在线加盟</li>
+                    <li>人才服务</li>
+                    <li>人才招聘</li>
+                    <li>在线招聘</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>新闻公告</li>
+                    <li>十七新闻</li>
+                    <li>十七公告</li>
+                    <li>行业动态</li>
+                    <li>企业视屏</li>
+                    <li>企业微博</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>走进十七</li>
+                    <li>十七简介</li>
+                    <li>十七历程</li>
+                    <li>十七文化</li>
+                    <li>十七品牌</li>
+                    <li>联系我们</li>
+                    <li>企业邮箱登陆</li>
+                    <li>十七快运系统登陆</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 hidden-md hidden-sm hidden-xs" id="finally">
+                <p class="first">联系我们</p>
+                <p>咨询热线:021—39927055、4001001717</p>
+                <p>总部地址:上海市嘉定区马陆浏翔公路2158号</p>
+                <p>官方网站:www.56ky.cn</p>
+                <img src="../images/weixin.jpg">
+                <div id="font">公司微信公众号平台，最新资讯，一扫了之！敬请关注!</div>
+            </div>
+        </div>
+        <div class="row" id="row2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background:#F06D2B;color:#fff; text-align: center;line-height: 40px;">Copyright &copy; 2015 Wliu Co.Ltd.沪ICP备00000000号 上海市浦东新区八嘎路2222号 技术支持：17素材
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/"></script>
+<script src="../js/fenye1.js"></script>
+<script>
+    $('#shiqi').on('click','li',function(){
+        var i = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#position').find('.position-con').eq(i).show().siblings().hide();
+    })
+
+</script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.animations.min.js"></script>
+<script src="../js/jquery.animations-tile.js"></script>
+<script src="../js/app.js"></script>
+
+<script type="text/javascript">
+    $('#image').animate('tile', {
+        "effect": "fadeIn",
+        "sequent": true,
+        "adjustDuration": true
+    });
+</script></body>
+</html>

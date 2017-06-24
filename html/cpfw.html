@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/2.css"/>
+    <link rel="stylesheet" href="../css/11.css"/>
+    <style>
+        /*       导航条      */
+        @media screen and (max-width: 1199px) and (min-width:768px){
+            #dht ul{
+                width:80%;
+            }
+        }
+        .background_fixed {
+            background:  #f2f2f2 url("../images/background.jpg") 27% -37% no-repeat  fixed;
+
+        }
+        .position-row,#iconlist {background-color:  rgba(248,251,252,0);}
+        .position-con {width: 100%; height: 100%;background-color:rgba(248,251,252,0);    padding: 10px;}#shiqi li {line-height:30px;border-bottom:1px dotted #ccc;list-style: none;height: 30px;background-color: rgba(248,251,252,0);}
+        #position .position-con{
+            min-height: 400px;
+        }
+        a{
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+<div id="cui_jian">
+    <div id="nav" class="container">
+        <div class="row text-center text-lowercase ">
+            <div class="col-md-3 col-xs-6 text-center">
+                <a href="#">
+                    <img src="../images/logo.png" class="img-responsive" alt=""/>
+                </a>
+            </div>
+            <div class="col-md-1 col-md-offset-1 hidden-sm hidden-xs"><a href="#"><b class="icon1"></b>联系我们</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon2"></b>投诉建议</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon3"></b>下载中心</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon4"></b>人才招聘</a></div>
+            <div class="col-md-3  col-xs-6 text-right" id="sc"><p><a href="#">加入收藏 设为首页</a></p>  <p>
+                服务热线：4001001717</p></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!--1、头部显示-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn_click" data-toggle="collapse" data-target="#myCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--2、折叠内容-->
+            <div id="myCollapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="fwdt.html" data-toggle="dropdown">
+                            服务大厅
+                            <span class="caret"></span>
+                        </a>
+                        <!--下拉菜单-->
+                        <ul class="dropdown-menu">
+                            <li><a href="fwdt.2.html">十七常识</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.html">新手入门</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.3.html">投诉建议</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.4.html">下载中心</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="zzcx.html">自助查询</a></li>
+                    <li><a href="cpfw.html">产品与服务</a></li>
+                    <li><a href="jrsq.html">加入十七</a></li>
+                    <li><a href="xwgg.html">新闻公告</a></li>
+                    <li><a href="zjsq.html">走进十七</a></li>
+                </ul>
+                <!--表单-->
+                <form class="navbar-form navbar-right" style="position:absolute;top:0px;right:40px;">
+                    <div class="form-group has-feedback">
+                        <input type="text"  id= "ddjing"class="form-control" placeholder="快递单号"/>
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--网页主体-->
+<section id="main" class="background_fixed">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="position-row">产品与服务</h4>
+                <ol id="shiqi">
+                    <li class="active"><span></span><a href="#">快运产品</a></li>
+                    <li><span></span><a href="#">定制产品</a></li>
+                    <li><span></span><a href="#">增值服务</a></li>
+                    <li><span></span><a href="#">整车转运</a></li>
+                    <li><span></span><a href="#">仓储物流</a></li>
+                </ol>
+                <div class="row" id="iconlist">
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon1.jpg" alt="icon1">
+                        </a>
+                        <p>联系</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon2.jpg" alt="icon2">
+                        </a>
+                        <p>投诉</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon3.jpg" alt="icon3">
+                        </a>
+                        <p>下载</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon4.jpg" alt="icon4">
+                        </a>
+                        <p>招聘</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 position" id="position">
+                <!--<div class="row">-->
+                <!--物流常识-->
+                <div class="position-con">
+                    <h4 class="position-title">快运产品</h4>
+                    <div class="img-title">
+                        <p> 零担快运：以30公斤至3000公斤为主的一票多件商务快运服务。</p>
+                            <p>特色：</p>
+                            <p>1)发货单件重量超过30公斤、体积超出的货物、托盘；原封包装的化妆品、药品等国家允许托运的液体；长度超过2米装修材料；必须向上竖放的家电等，快递公司做不了的市场。</p>
+                            <p>2)客户从工厂或仓储中心直接发到终端销售商B2B类业务，如商场、专柜、门店等，或直接发往消费者手中B2C类业务，由于这一市场具有“整体货量大但单票货量小、送货目的地广泛、客户要求高”等特点，第三方物流不愿意做的市场。</p>
+                            <p>3)对于10立方以下、重量2吨以下的客户需求，我们采取免费提货、免费送货、免费卸货、价格优惠等一系列策略，以较高的性价比及安全性，赢得与专线物流公司的竞争，从而进入这一市场。</p>
+                            <p>在细分出来的这一市场，我们开创了以“快递的服务模式+物流的运输方式”，完美的解决了长期困扰客户的难题，从而为您创造最大价值！
+                        </p>
+                    </div>
+                </div>
+                <!--新手入门-->
+                <div class="position-con disnone">
+                    <h4 class="position-title">定制产品</h4>
+                    <div class="img-title">
+                        <p>产品名称：五六快车“定时达”</p>
+                            <p>产品简介：</p>
+                            <p>五六快运专线快车“定时达”采取定时发车、定时到达、定时配送，全程GPS监控，运行时间缩短40%左右。</p>
+                            <p>“定时达”的服务理念承诺您：未定时到达，免除当次运费，欢迎新老客户惠顾！</p>
+                            <p>服务宗旨：</p>
+                            <p>1) 快捷：采用进口VOLVO重型卡车运输，将原有运输时间缩短50%，控制发车时间、行驶时间、配送时间，时刻保证货物准时到达目的地。</p>
+                            <p>2) 方便：采用五六快运标准厢式货车为您提供上门提货、送货上门服务，使您可以足不出户将您的货物送至目的地。</p>
+                            <p>3) 安全：采用全程GPS定位系统跟踪货物运输，使您的货物运输过程更透明。</p>
+                            <p>4) 沟通：强大的客服团队为您提供一对一的贴心服务，同时提供网站自助查询服务。</p>
+                            <p>5) 承诺：发生货损后实行现场赔付，未按规定时间内到达退还全部运费。</p>
+                            <p>6) 保障：凭借我们科学规划的多条运输线路，500多辆箱式货车，以及遍布全国1000多家门店， GPS全程货物跟踪，确保您的货物安全送达。 </p>
+                    </div>
+                </div>
+                <!--投诉建议-->
+                <div class="position-con  disnone">
+                    <h4 class="position-title">增值服务</h4>
+                    <div class="img-title">
+                        <p>1)代收货款</p>
+                            <p>按照寄件客户（卖方）与收件客户（买方）达成交易协议的要求，为寄件方承运、配送物品的同时，向收件客户收取款项转交至寄件客户的服务。提供72h代收货款服务，承诺时效内退款，提供多次配送，派送成功率高，让您安全、及时回笼资金。</p>
+                            <p>服务说明1：当客户需要代收货款业务时，请先和五六网点业务员或站点确认，并详细填写个人信息，保证填写的开户名称、收款银行、账号等信息准确无误，并请仔细核对发货人姓名及手机号等信息，否则退错将严重影响您的退款时效，然后在运单联准确填写代收货款金额。</p>
+                            <p>服务说明2：发货时，业务员需对客户的货物进行开箱验货，请您予以配合；收货方无需征求发货人的同意可以对代收货款货物进行开箱验货，请您发货前与收货人协商好货物质量、规格等。因您发错货物或者质量问题，导致收货人不签收的，五六快运不承担任何责任。</p>
+                            <p>2)到付业务</p>
+                            <p>由收货人支付运费的一种服务方式，须发货客户和收件客户双方确认好金额和运输方式。到付业务需要收取15%的手续费。</p>
+                            <p>3)签单回收</p>
+                            <p>在货物正常签收后，将寄件客户提供的需收件客户签名的收条或收货单等单据返还寄件客户的服务；有进仓回单：进仓业务，同时包含进仓费发票的回单业务；普通回单：发货清单、出库单等签字回单业务。提供签收单原件返回业务，保障客户交易安全，方便客户对账结算。</p>
+
+                            <p>4)保价理赔</p>
+                            <p>保价运输是指安能与您共同确定的以托运人申明货物价值为基础的一种特殊运输方式，您向安能</p>
+                            <p>声明其托运货物的实际价值，按保价运输的货物，托运人除缴纳运输费用外，按照规定缴纳一定的保价费用，若货物在运输过程中出险，我司将按照托运人的声明价值赔偿一定损失。</p>
+
+                            <p>5)短信通知</p>
+                            <p>实时短信推送货物在途信息至客户</p>
+                            <p>及时贴心，提前知会，便于客户灵活安排；实时跟踪，让货物信息尽在掌握。</p>
+                            <p>提示：寄件客户需在运单中填写正确的发货客户和收件客户的手机号码，以便及时短信通知。
+                        </p>
+                    </div>
+                </div>
+                <!--下载中心-->
+                <div class="position-con disnone">
+                    <h4 class="position-title">整车装运</h4>
+                    <div class="img-title">
+                        <p>1)加急货，需要当天送达客户指定地址；</p>
+                        <p>2)大票货，我们根据货量大小提供相应车辆；</p>
+                            <p>3)进仓货，到保税区进仓，需要专票专送。</p>
+                            <p>4)商场货，禁区规定时间送货；</p>
+                            <p>5)特种货，必须单独运输，不能与其它货混装。</p>
+                        <p>针对以上情况，我们为客户量身定做各种方案，提供相应大小车辆，最大限度满足客户要求
+                        </p>
+                    </div>
+                </div>
+                <div class="position-con disnone">
+                    <h4 class="position-title">仓储物流</h4>
+                    <div class="img-title">
+                            <p>五六仓储物流—专业仓储，服务到家</p>
+                            <p>产品介绍：</p>
+                            <p>五六仓管家可根据客户需求提供灵活建仓、大促处理、多渠道管理、干线运输及最后一公里等仓配一体化的供应链解决方案</p>
+                            <p>产品详情：</p>
+                            <p>根据客户需求及类目特点，五六仓管家向客户提供一站式服务，完成商品入库、上架、质检、存储、分拣、包装、称重、配单、出库、退换货，及行业解决方案等服务。</p>
+                            <p>仓管模式：</p>
+                            <p>①标准仓</p>
+                            <p>为客户提供多元仓库及多功能的库内管理，有专业的仓储系统，能为客户带来丰富的库内增值服务</p>
+                            <p>②代运营仓</p>
+                            <p>接管客户仓库，根据客户需求，定制开发灵活的信息系统；通过精细化管理，提升供应链效率，降低仓储成本，并定期出具营运管理报表。</p>
+                            <p>产品特点：</p>
+                            <p>①管理专业</p>
+                            <p>仓库布局专业化，管控系统定制化，库内管理标准化。</p>
+                            <p>②成本更低</p>
+                            <p>精细化运作管理，仓储成本更低。推广期免管理费、装卸费。</p>
+                            <p>③峰值无忧</p>
+                            <p>丰富的仓库资源、高峰期应急预案、数十万级单量系统。</p>
+                            <p>④全程可视</p>
+                        <p>库存情况即时知晓，货物轨迹实时查询，品质指标全面监控。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row" id="row1" style="height: 205px;">
+            <div class="col-lg-1 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>服务大厅</li>
+                    <li>十七常识</li>
+                    <li>新手入门</li>
+                    <li>投诉中心</li>
+                    <li>下载中心</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>自助查询</li>
+                    <li>运单查询</li>
+                    <li>网点查询</li>
+                    <li>货物追踪</li>
+                    <li>订单查询</li>
+                </ul>
+            </div>
+            <div class="col-lg-1">
+                <ul>
+                    <li>产品与服务</li>
+                    <li>快运产品</li>
+                    <li>定制产品</li>
+                    <li>增值服务</li>
+                    <li>整车转运</li>
+                    <li>仓储物流</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>加入十七</li>
+                    <li>加盟指南</li>
+                    <li>在线加盟</li>
+                    <li>人才服务</li>
+                    <li>人才招聘</li>
+                    <li>在线招聘</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>新闻公告</li>
+                    <li>十七新闻</li>
+                    <li>十七公告</li>
+                    <li>行业动态</li>
+                    <li>企业视屏</li>
+                    <li>企业微博</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>走进十七</li>
+                    <li>十七简介</li>
+                    <li>十七历程</li>
+                    <li>十七文化</li>
+                    <li>十七品牌</li>
+                    <li>联系我们</li>
+                    <li>企业邮箱登陆</li>
+                    <li>十七快运系统登陆</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 hidden-md hidden-sm hidden-xs" id="finally">
+                <p class="first">联系我们</p>
+                <p>咨询热线:021—39927055、4001001717</p>
+                <p>总部地址:上海市嘉定区马陆浏翔公路2158号</p>
+                <p>官方网站:www.56ky.cn</p>
+                <img src="../images/weixin.jpg">
+                <div id="font">公司微信公众号平台，最新资讯，一扫了之！敬请关注!</div>
+            </div>
+        </div>
+        <div class="row" id="row2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background:#F06D2B;color:#fff; text-align: center;line-height: 40px;">Copyright &copy; 2015 Wliu Co.Ltd.沪ICP备00000000号 上海市浦东新区八嘎路2222号 技术支持：17素材
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootlint.js"></script>
+<script src="../js/fenye1.js"></script>
+<script>
+    $('#shiqi').on('click','li',function(){
+        var i = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#position').find('.position-con').eq(i).show().siblings().hide();
+
+
+    })
+    $('#shiqi>li').on('mouseleave',function(){
+        $(this).siblings().children('a').css('text-decoration','none');
+    })
+    $("#myCollapse .form-control").focus(function(){
+        $(this).stop(true).animate({
+            width:"227px"
+        },350)
+    });
+    $("#myCollapse .form-control").blur(function(){
+        $(this).animate({
+            width:"20px"
+        },1000)
+    });
+</script>
+</body>
+</html>

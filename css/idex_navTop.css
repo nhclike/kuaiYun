@@ -1,0 +1,78 @@
+/***************通用的样式****************/
+/**********************************/
+*{
+    box-sizing:border-box;
+}
+body{
+
+    margin:0;
+    padding:0;
+}
+p{
+    margin: 0;
+    padding:0;
+}
+a{
+    color:#000000;
+    text-decoration: none;
+}
+
+
+#nav div:not(:first-child){
+    margin-top: 33px;
+    vertical-align: bottom;
+    position: relative;
+}
+#nar img{
+    width: 100px ;
+    height:500px ;
+
+
+}
+.icon1,.icon2,.icon3,.icon4{
+    display: inline-block;
+    width: 29px;
+    height: 27px;
+    background: url("../images/icon1.jpg") no-repeat;
+    position: absolute;
+    top: -3px ;left: -10px ;
+}
+.icon2{
+         background: url("../images/icon2.jpg") no-repeat;
+     }
+.icon3{
+    background: url("../images/icon3.jpg") no-repeat;
+}
+.icon4{
+    background: url("../images/icon4.jpg") no-repeat;
+}
+#myCollapse {
+    margin-left: 50px;
+ }
+.btn_click{
+    border: none;
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    #nav{
+        position: fixed;
+        width: 100%;
+    }
+   .container{
+       width:1199px;
+   }
+    .form-group.has-feedback{
+        margin-right:20px;
+    }
+}
+@media screen and (max-width:767px){
+    .navbar-default{
+        background-color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #ffffff;
+        background: #291111;
+        border-bottom: 1px solid #fff;
+    }
+
+}

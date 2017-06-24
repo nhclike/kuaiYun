@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/3.css"/>
+    <link rel="stylesheet" href="../css/11.css"/>
+    <style>
+        /*       导航条      */
+        @media screen and (max-width: 1199px) and (min-width:768px){
+            #dht ul{
+                width:80%;
+            }
+        }
+
+        @media screen and (max-width:767px){html{font-size: 6px;}}
+        @media screen and (min-width:768px) and (max-width:991px){html{font-size: 8px;}}
+        @media screen and (min-width:991px){html{font-size: 12px;}}
+        .position-row,.position-title { border-bottom:1px solid #cccccc;line-height: 32px;  }
+        .position-row {margin-bottom: 0;}
+        #shiqi{ padding: 0px !important;}
+        #shiqi li {line-height:30px;border-bottom:1px dotted #ccc;list-style: none;
+            height: 30px;background-color: rgba(248,251,252,0);}
+        #shiqi li span {display: inline-block;background-color:#ccc;
+            width: 5px;  height: 5px;border-radius: 50%;}
+        #shiqi li a {color:#333;margin-left:0.4em;}
+        #shiqi li.active, #shiqi li.active span{background-color: #EC6C2B;}
+        #shiqi li.active a {color:#fff;}
+        .position-row,#iconlist {background-color:  rgba(248,251,252,0);}
+        .position-con {width: 100%; height: 100%;background-color:rgba(248,251,252,0);    padding: 10px;}
+        .img-title{padding-left:1rem;padding-right: 1rem;}
+        .img-title img {width:100%;}
+        .disnone{display: none;}
+        #image{
+            display:block;
+            margin:0 auto;
+            width:616px;
+            height:546px;
+        }
+        @media screen and (max-width:1200px){
+            #image{
+                width:100%;
+                height: 100%;
+            }
+        }
+        .background_fixed {
+            background:  #f2f2f2 url("../images/background.jpg") 27% -37% no-repeat  fixed;
+
+        }
+        #position .position-con{
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div id="cui_jian">
+    <div id="nav" class="container">
+        <div class="row text-center text-lowercase ">
+            <div class="col-md-3 col-xs-6 text-center">
+                <a href="#">
+                    <img src="../images/logo.png" class="img-responsive" alt=""/>
+                </a>
+            </div>
+            <div class="col-md-1 col-md-offset-1 hidden-sm hidden-xs"><a href="#"><b class="icon1"></b>联系我们</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon2"></b>投诉建议</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon3"></b>下载中心</a></div>
+            <div class="col-md-1  hidden-sm hidden-xs"><a href="#"><b class="icon4"></b>人才招聘</a></div>
+            <div class="col-md-3  col-xs-6 text-right" id="sc"><p><a href="#">加入收藏 设为首页</a></p>  <p>
+                服务热线：4001001717</p></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!--1、头部显示-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn_click" data-toggle="collapse" data-target="#myCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--2、折叠内容-->
+            <div id="myCollapse" class="navbar-collapse collapse" id="dht">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="fwdt.html" data-toggle="dropdown">
+                            服务大厅
+                            <span class="caret"></span>
+                        </a>
+                        <!--下拉菜单-->
+                        <ul class="dropdown-menu">
+                            <li><a href="fwdt.html">十七常识</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.2.html">新手入门</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.3.html">投诉建议</a></li>
+                            <li class="divider"></li>
+                            <li><a href="fwdt.4.html">下载中心</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="zzcx.html">自助查询</a></li>
+                    <li><a href="cpfw.html">产品与服务</a></li>
+                    <li><a href="jrsq.html">加入十七</a></li>
+                    <li><a href="xwgg.html">新闻公告</a></li>
+                    <li><a href="zjsq.html">走进十七</a></li>
+                </ul>
+                <!--表单-->
+                <form class="navbar-form navbar-right" style="position:absolute;top:0px;right:40px;">
+                    <div class="form-group has-feedback">
+                        <input type="text"  id="ddjing"class="form-control" placeholder="快递单号"/>
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--网页主体-->
+<section id="main" class="background_fixed">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="position-row"><a href="#">加入十七</a></h4>
+                <ol id="shiqi">
+                    <li class="active"><span></span><a href="#">加盟指南</a></li>
+                    <li><span></span><a href="#">在线加盟</a></li>
+                    <li><span></span><a href="#">人才服务</a></li>
+                    <li><span></span><a href="#">人才招聘</a></li>
+                    <li><span></span><a href="#">在线招聘</a></li>
+                </ol>
+                <div class="row" id="iconlist">
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon1.jpg" alt="icon1">
+                        </a>
+                        <p>联系</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon2.jpg" alt="icon2">
+                        </a>
+                        <p>投诉</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon3.jpg" alt="icon3">
+                        </a>
+                        <p>下载</p>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-3 col-xs-3">
+                        <a href="#" class="iconlist">
+                            <img src="../images/icon4.jpg" alt="icon4">
+                        </a>
+                        <p>招聘</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 position" id="position">
+                <!--<div class="row">-->
+                <!--加盟指南-->
+                <div class="position-con">
+                    <h4 class="position-title">加盟指南</h4>
+                    <div class="img-title">
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <b style="display: block;text-align: center;padding:100%;font-size:4rem;font-weight:bold;">1</b>
+                            </div>
+                            <div class="col-xs-3">
+                            <img src="../images/join1.png" alt="" style="width:80%;"/>
+                            </div>
+                            <div class="col-xs-8">
+                                <h5>加盟咨询</h5>
+                                <p>具有物流、快运相关从业经验，具有较强的经济实力、抗风险能力以及投资管理能力，需备足流动资金</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <b style="display: block;text-align: center;padding:100%;font-size:4rem;font-weight:bold;">2</b>
+                            </div>
+                            <div class="col-xs-3">
+                                <img src="../images/join2.png" alt="" style="width:80%;"/>
+                            </div>
+                            <div class="col-xs-8">
+                                <h5>加盟咨询</h5>
+                                <p>具有物流、快运相关从业经验，具有较强的经济实力、抗风险能力以及投资管理能力，需备足流动资金</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <b style="display: block;text-align: center;padding:100%;font-size:4rem;font-weight:bold;">3</b>
+                            </div>
+                            <div class="col-xs-3">
+                                <img src="../images/join3.png" alt="" style="width:80%;"/>
+                            </div>
+                            <div class="col-xs-8">
+                                <h5>加盟咨询</h5>
+                                <p>具有物流、快运相关从业经验，具有较强的经济实力、抗风险能力以及投资管理能力，需备足流动资金</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <b style="display: block;text-align: center;padding:100%;font-size:4rem;font-weight:bold;">4</b>
+                            </div>
+                            <div class="col-xs-3">
+                                <img src="../images/join4.png" alt="" style="width:80%;"/>
+                            </div>
+                            <div class="col-xs-8">
+                                <h5>加盟咨询</h5>
+                                <p>具有物流、快运相关从业经验，具有较强的经济实力、抗风险能力以及投资管理能力，需备足流动资金</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <b style="display: block;text-align: center;padding:100%;font-size:4rem;font-weight:bold;">5</b>
+                            </div>
+                            <div class="col-xs-3">
+                                <img src="../images/join5.png" alt="" style="width:80%;"/>
+                            </div>
+                            <div class="col-xs-8">
+                                <h5>加盟咨询</h5>
+                                <p>具有物流、快运相关从业经验，具有较强的经济实力、抗风险能力以及投资管理能力，需备足流动资金</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <b style="display: block;text-align: center;padding:100%;font-size:4rem;font-weight:bold;">6</b>
+                            </div>
+                            <div class="col-xs-3">
+                                <img src="../images/join6.png" alt="" style="width:80%;"/>
+                            </div>
+                            <div class="col-xs-8">
+                                <h5>加盟咨询</h5>
+                                <p>具有物流、快运相关从业经验，具有较强的经济实力、抗风险能力以及投资管理能力，需备足流动资金</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <!--在线加盟-->
+                    <div class="position-con disnone">
+                        <h4 class="position-title">在线加盟</h4>
+                        <div class="img-title">
+                            <h3>零担快运：以30公斤至 斤为主的一票多件商务快运服务。</h3>
+                            <h5> 加盟热线：4001005656</h5>
+                            <p> 在线加盟：在官方网站设有“加入五六”栏目，会自动引导您注册在线加盟信息。后台收到您的信息后，工作人员会主动跟您联系。<br>
+                                电话加盟：在“加入五六”栏目，各省区都有公布对应的网络负责人的姓名和电话，可直接电话咨询和实地考察了解。<br>
+                                招商会现场签约：五六平台会在各省区巡回举办招商大会，进行现场推广。有识之士可以到现场了解再签约。<br>
+                            </p>
+                        </div>
+                    </div>
+                <!--人才服务-->
+                <div class="position-con disnone">
+                    <h4 class="position-title">人才服务</h4>
+                    <div class="img-title">
+                        <p>   如何接受货物<br>
+                            1：自提和派送是什么意思？<br><br>
+
+                            回答：<br>
+                            自提：就是您需要亲自去五六快运的营业网点领取货物。<br>
+                            派送：就是五六快运会派专门的送货人员将您的货物送到您指定的地方。派送分为送货（不含上楼）和送货上楼两种。<br><br>
+
+                            2：接收货物需要办理什么手续？<br>
+                            回答：<br>
+                            自提：如果是自提货物，我们会通知您至五六快运派送部仓库提取，您需携带《提货人身份证》等有效证明到相应仓库提取。<br>
+                            派送：如果是我们送货上门的货物，我们会提前与您联系并核实货物信息、收货地点、收货人、是否开发票、送货时间等信息。<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-con disnone">
+                    <h4 class="position-title">人才招聘</h4>
+                    <div class="img-title">
+                        <h4>所在部门</h4>
+                        <p>生物医药化学部</p>
+                        <p>专业方向</p>
+                        <br/>
+                        <p>有机合成、药物合成、分析化学等化学制药相关专业</p>
+                        <br/>
+                        <p>职位要求</p>
+                        <p>1、有机合成、药物合成专业或分析化学专业，博士学历；
+                            2、应聘者需要具备很强的科研能力、独立工作能力和管理能力，具备领导和管理一个或者多个科研小组的能力；
+                            3、能够用英文和客户进行沟通；</p>
+                        <br/>
+                        <p>
+    `                       4、博士级以上学历 。
+                        </p>
+                        <br/>
+                        <p>
+                            招聘流程
+                        </p>
+                        <p>
+                            简历投递、简历筛选、初试、复试、签订协议
+                            公司福利
+                        </p>
+                        <p>
+                            公司可以为员工办理上海户口、季度奖金、年终奖金、公司每年组织员工外出旅游、年度体检、生日礼物节日礼物、结婚礼金、培训、部门团队活动经费、出国深造、班车等。
+                        </p>
+                        <p>特别提示</p>
+                        <p>
+                            1、投递简历Email地址：xzye@medicilon.com.cn，主题请按下列格式：姓名+应聘职位+学历。
+                        </p>
+                        <p>
+                            2、请将简历与研究工作报告一并投递。
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row" id="row1" style="height: 205px;">
+            <div class="col-lg-1 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>服务大厅</li>
+                    <li>十七常识</li>
+                    <li>新手入门</li>
+                    <li>投诉中心</li>
+                    <li>下载中心</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>自助查询</li>
+                    <li>运单查询</li>
+                    <li>网点查询</li>
+                    <li>货物追踪</li>
+                    <li>订单查询</li>
+                </ul>
+            </div>
+            <div class="col-lg-1">
+                <ul>
+                    <li>产品与服务</li>
+                    <li>快运产品</li>
+                    <li>定制产品</li>
+                    <li>增值服务</li>
+                    <li>整车转运</li>
+                    <li>仓储物流</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>加入十七</li>
+                    <li>加盟指南</li>
+                    <li>在线加盟</li>
+                    <li>人才服务</li>
+                    <li>人才招聘</li>
+                    <li>在线招聘</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>新闻公告</li>
+                    <li>十七新闻</li>
+                    <li>十七公告</li>
+                    <li>行业动态</li>
+                    <li>企业视屏</li>
+                    <li>企业微博</li>
+                </ul>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                <ul>
+                    <li>走进十七</li>
+                    <li>十七简介</li>
+                    <li>十七历程</li>
+                    <li>十七文化</li>
+                    <li>十七品牌</li>
+                    <li>联系我们</li>
+                    <li>企业邮箱登陆</li>
+                    <li>十七快运系统登陆</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 hidden-md hidden-sm hidden-xs" id="finally">
+                <p class="first">联系我们</p>
+                <p>咨询热线:021—39927055、4001001717</p>
+                <p>总部地址:上海市嘉定区马陆浏翔公路2158号</p>
+                <p>官方网站:www.56ky.cn</p>
+                <img src="../images/weixin.jpg">
+                <div id="font">公司微信公众号平台，最新资讯，一扫了之！敬请关注!</div>
+            </div>
+        </div>
+        <div class="row" id="row2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background:#F06D2B;color:#fff; text-align: center;line-height: 40px;">Copyright &copy; 2015 Wliu Co.Ltd.沪ICP备00000000号 上海市浦东新区八嘎路2222号 技术支持：17素材
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/fenye1.js"></script>
+<script>
+    $('#shiqi').on('click','li',function(){
+        var i = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#position').find('.position-con').eq(i).show().siblings().hide();
+
+
+    })
+    $('#shiqi>li').on('mouseleave',function(){
+        $(this).siblings().children('a').css('text-decoration','none');
+    })
+</script>
+</body>
+</html>
